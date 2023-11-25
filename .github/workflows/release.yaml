@@ -27,16 +27,6 @@ jobs:
           - name: Linux mips64
             target: mips64-unknown-linux-muslabi64
 
-          #- name: MacOS aarch64
-          #  target: aarch64-apple-darwin
-
-          # - name: iOS x86_64
-          #   target: x86_64-apple-ios
-
-
-          #- name: iOS aarch64
-          #  target: aarch64-apple-ios
-
     steps:
     - name: Install package for linux
       if: contains(matrix.platform.target, 'linux')
